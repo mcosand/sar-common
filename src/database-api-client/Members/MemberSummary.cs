@@ -9,6 +9,12 @@ namespace Kcsara.Database.Model.Members
 
     public string Photo { get; set; }
 
-    public NameIdPair[] Units { get; set; }
+    public UnitMembershipSummary[] Units { get; set; }
+  }
+
+  public class UnitMembershipSummary
+  {
+    public NameIdPair Unit { get; set; }
+    public string Status { get; set; }
   }
 }
