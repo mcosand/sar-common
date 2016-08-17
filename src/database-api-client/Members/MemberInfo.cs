@@ -15,5 +15,6 @@ namespace Kcsara.Database.Model.Members
     public WacLevel WacLevel { get; set; }
     public DateTime WacLevelDate { get; set; }
     public DateTime? BirthDate { get; set; }
+    public bool BackgroundKnown { get; set; }
   }
 }
