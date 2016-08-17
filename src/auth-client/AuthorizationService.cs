@@ -26,6 +26,12 @@ namespace Sar.Services.Auth
     {
       var userInfo = await _rolesService.GetCurrentUserInfo();
 
+      // Members can read their own records.
+      if (policyName.StartsWith("Read:") && (policyName.EndsWith("@Member") || policyName.EndsWith(":Member")) && (Guid)resource == userInfo.MemberId)
+      {
+        return true;
+      }
+
       Match m = Regex.Match(policyName, "^([a-zA-Z]+)(\\:([a-zA-Z]+)(@([a-zA-Z]+))?)?$");
       if (!m.Success) throw new InvalidOperationException("Unknown policy " + policyName);
 
