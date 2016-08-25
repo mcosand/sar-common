@@ -26,8 +26,10 @@ namespace Sar.Services.Auth
     {
       var userInfo = await _rolesService.GetCurrentUserInfo();
 
+      if (userInfo == null) throw new ArgumentNullException(nameof(userInfo));
+      if (policyName == null) throw new ArgumentNullException(nameof(policyName));
       // Members can read their own records.
-      if (policyName.StartsWith("Read:") && (policyName.EndsWith("@Member") || policyName.EndsWith(":Member")) && (Guid)resource == userInfo.MemberId)
+      if (userInfo != null && (Guid?)resource == userInfo.MemberId && policyName.StartsWith("Read:") && (policyName.EndsWith("@Member") || policyName.EndsWith(":Member")))
       {
         return true;
       }
