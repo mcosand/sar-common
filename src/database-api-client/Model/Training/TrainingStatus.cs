@@ -1,0 +1,26 @@
+﻿using System;
+
+namespace Sar.Database.Model.Training
+{
+
+  public class TrainingStatus
+  {
+    public DateTime? Expires { get; set; }
+    public ExpirationFlags Status { get; set; }
+    public DateTime? Completed { get; set; }
+    public NameIdPair Course { get; set; }
+  }
+
+  [Flags]
+  public enum ExpirationFlags
+  {
+    Unknown = 0,
+    Bad = 1,
+    Missing = 3,
+    Expired = 5,
+    ToBeCompleted = 2,
+    NotNeeded = 8,
+    Complete = 16,
+    NotExpired = 32
+  }
+}
