@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FCDA865-1BAE-47C6-8A4F-715F0FF89C47}</ProjectGuid>
+    <ProjectGuid>{EBB4EB71-3979-4C7A-A838-090E47750CEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sar.Database</RootNamespace>
