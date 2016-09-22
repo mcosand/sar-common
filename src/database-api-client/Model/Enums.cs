@@ -14,4 +14,10 @@
     Support = 3,
     Field = 4
   }
+
+  public enum SearchResultType
+  {
+    Member,
+    Mission
+  }
 }

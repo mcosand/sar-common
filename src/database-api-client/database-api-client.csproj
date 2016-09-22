@@ -41,11 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\EventSummary.cs" />
     <Compile Include="Model\Members\MemberInfo.cs" />
     <Compile Include="Model\Members\MemberSummary.cs" />
     <Compile Include="Model\Members\ProvisionMemberInfo.cs" />
     <Compile Include="Model\NameIdPair.cs" />
     <Compile Include="Model\PersonContact.cs" />
+    <Compile Include="Model\Search\EventSearchResult.cs" />
+    <Compile Include="Model\Search\MemberSearchResult.cs" />
+    <Compile Include="Model\Search\SearchResponse.cs" />
+    <Compile Include="Model\Search\SearchResult.cs" />
     <Compile Include="Model\Training\TrainingStatus.cs" />
     <Compile Include="Model\Units\Unit.cs" />
     <Compile Include="Model\Units\UnitMembership.cs" />

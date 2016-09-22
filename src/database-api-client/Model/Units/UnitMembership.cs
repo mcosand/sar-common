@@ -1,4 +1,5 @@
 ﻿using System;
+using Sar.Database.Model.Members;
 
 namespace Sar.Database.Model.Units
 {
@@ -6,7 +7,7 @@ namespace Sar.Database.Model.Units
   {
     public Guid Id { get; set; }
     public NameIdPair Unit { get; set; }
-    public NameIdPair Member { get; set; }
+    public MemberSummary Member { get; set; }
     public string Status { get; set; }
     public bool IsActive { get; set; }
     public DateTime Start { get; set; }

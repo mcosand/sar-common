@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.IO;
+using System.Security.Claims;
 
 namespace Sar
 {
@@ -6,5 +7,7 @@ namespace Sar
   {
     ClaimsPrincipal User { get; }
     string GetConfig(string key);
+
+    Stream OpenFile(string relativePath);
   }
 }
