@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Model\Enums.cs" />
     <Compile Include="Model\EventSummary.cs" />
+    <Compile Include="Model\ListPermissionWrapper.cs" />
     <Compile Include="Model\Members\MemberInfo.cs" />
     <Compile Include="Model\Members\MemberSummary.cs" />
     <Compile Include="Model\Members\ProvisionMemberInfo.cs" />
