@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\AuthorizationException.cs" />
+    <Compile Include="Exceptions\DuplicateItemException.cs" />
     <Compile Include="Exceptions\MultipleMatchesException.cs" />
     <Compile Include="Exceptions\NotFoundException.cs" />
     <Compile Include="Exceptions\UserErrorException.cs" />
