@@ -5,9 +5,9 @@ namespace Sar.Database.Model.Training
 
   public class TrainingStatus
   {
-    public DateTime? Expires { get; set; }
+    public DateTimeOffset? Expires { get; set; }
     public ExpirationFlags Status { get; set; }
-    public DateTime? Completed { get; set; }
+    public DateTimeOffset? Completed { get; set; }
     public NameIdPair Course { get; set; }
   }
 

@@ -53,6 +53,7 @@
     <Compile Include="Model\Search\MemberSearchResult.cs" />
     <Compile Include="Model\Search\SearchResponse.cs" />
     <Compile Include="Model\Search\SearchResult.cs" />
+    <Compile Include="Model\Training\TrainingRecord.cs" />
     <Compile Include="Model\Training\TrainingStatus.cs" />
     <Compile Include="Model\Units\Unit.cs" />
     <Compile Include="Model\Units\UnitMembership.cs" />
