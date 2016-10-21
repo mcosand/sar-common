@@ -8,7 +8,7 @@ namespace Sar.Database.Model
 {
   public static class PermissionWrapper
   {
-    public static ItemPermissionWrapper<T> Create<T>(T item, int u, int d) where T : class
+    public static ItemPermissionWrapper<T> Create<T>(T item, bool u, bool d) where T : class
     {
       return new ItemPermissionWrapper<T>
       {
@@ -24,21 +24,21 @@ namespace Sar.Database.Model
   public class ListPermissionWrapper<T> where T : class
   {
     public IEnumerable<ItemPermissionWrapper<T>> Items { get; set; } = new List<ItemPermissionWrapper<T>>();
-    public int C { get; set; } = 0;
+    public bool C { get; set; } = false;
   }
 
   public interface IItemPermissionWrapper
   {
     object Item { get; }
-    int U { get; set; }
-    int D { get; set; }
+    bool U { get; set; }
+    bool D { get; set; }
   }
 
   public class ItemPermissionWrapper<T> : IItemPermissionWrapper where T : class
   {
     public T Item { get; set; }
-    public int U { get; set; }
-    public int D { get; set; }
+    public bool U { get; set; }
+    public bool D { get; set; }
     object IItemPermissionWrapper.Item { get { return Item; } }
   }
 }

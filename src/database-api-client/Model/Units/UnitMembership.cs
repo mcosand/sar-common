@@ -3,7 +3,7 @@ using Sar.Database.Model.Members;
 
 namespace Sar.Database.Model.Units
 {
-  public class UnitMembership
+  public class UnitMembership : IId
   {
     public Guid Id { get; set; }
     public NameIdPair Unit { get; set; }

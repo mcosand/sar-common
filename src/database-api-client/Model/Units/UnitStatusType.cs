@@ -1,18 +1,12 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Sar.Database.Model.Units
 {
-  public class UnitStatusType
+  public class UnitStatusType : NameIdPair
   {
-    public Guid Id { get; set; }
-
     [Required]
     public NameIdPair Unit { get; set; }
 
-    [Required]
-    [MaxLength(20, ErrorMessage = "Too long")]
-    public string Name { get; set; }
     public bool IsActive { get; set; }
     public bool GetsAccount { get; set; }
 

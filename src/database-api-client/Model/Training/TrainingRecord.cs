@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Sar.Database.Model.Training
 {
-  public class TrainingRecord
+  public class TrainingRecord : IId
   {
     public Guid Id { get; set; }
 
