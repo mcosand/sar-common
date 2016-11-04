@@ -32,6 +32,7 @@ namespace Sar.Database.Model
     object Item { get; }
     bool U { get; set; }
     bool D { get; set; }
+    Dictionary<string, bool> More { get; set; }
   }
 
   public class ItemPermissionWrapper<T> : IItemPermissionWrapper where T : class
@@ -39,6 +40,9 @@ namespace Sar.Database.Model
     public T Item { get; set; }
     public bool U { get; set; }
     public bool D { get; set; }
+
+    public Dictionary<string, bool> More { get; set; } = new Dictionary<string, bool>();
+
     object IItemPermissionWrapper.Item { get { return Item; } }
   }
 }

@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Accounts\Account.cs" />
+    <Compile Include="Model\Accounts\PasswordResetRequest.cs" />
+    <Compile Include="Model\Accounts\Role.cs" />
     <Compile Include="Model\Enums.cs" />
     <Compile Include="Model\EventSummary.cs" />
     <Compile Include="Model\IId.cs" />
@@ -61,6 +64,7 @@
     <Compile Include="Model\Units\UnitStatusType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
