@@ -9,5 +9,7 @@ namespace Sar
     string GetConfig(string key);
 
     Stream OpenFile(string relativePath);
+
+    bool FileExists(string relativePath);
   }
 }
