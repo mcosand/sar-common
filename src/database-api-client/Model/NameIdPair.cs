@@ -8,7 +8,6 @@ namespace Sar.Database.Model
     public Guid Id { get; set; }
 
     [Required]
-    [MaxLength(20, ErrorMessage = "Too long")]
     public string Name { get; set; }
   }
 }
