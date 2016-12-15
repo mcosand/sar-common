@@ -46,7 +46,9 @@
     <Compile Include="Model\Accounts\Role.cs" />
     <Compile Include="Model\Animals\Animal.cs" />
     <Compile Include="Model\Animals\AnimalOwner.cs" />
+    <Compile Include="Model\AttendanceStatistics.cs" />
     <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\EventAttendance.cs" />
     <Compile Include="Model\EventSummary.cs" />
     <Compile Include="Model\IId.cs" />
     <Compile Include="Model\ListPermissionWrapper.cs" />
