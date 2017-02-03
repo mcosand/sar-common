@@ -5,10 +5,15 @@ namespace Sar.Database.Model.Training
 
   public class TrainingStatus
   {
+    public Guid Id { get; set; }
     public DateTimeOffset? Expires { get; set; }
     public ExpirationFlags Status { get; set; }
     public DateTimeOffset? Completed { get; set; }
     public NameIdPair Course { get; set; }
+
+    public string EventType { get; set; }
+    public Guid? EventId { get; set; }
+    public bool FromRule { get; set; }
   }
 
   [Flags]
