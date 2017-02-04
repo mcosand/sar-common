@@ -12,4 +12,9 @@ namespace Sar.Database.Model
     public int Miles { get; set; }
     public double Hours { get; set; }
   }
+
+  public class GroupEventAttendance : EventAttendance
+  {
+    public int Persons { get; set; }
+  }
 }
