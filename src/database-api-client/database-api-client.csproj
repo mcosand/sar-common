@@ -56,7 +56,6 @@
     <Compile Include="Model\Members\MemberAddress.cs" />
     <Compile Include="Model\Members\MemberInfo.cs" />
     <Compile Include="Model\Members\MemberSummary.cs" />
-    <Compile Include="Model\Members\ProvisionMemberInfo.cs" />
     <Compile Include="Model\NameIdPair.cs" />
     <Compile Include="Model\PersonContact.cs" />
     <Compile Include="Model\Search\EventSearchResult.cs" />
